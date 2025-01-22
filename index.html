@@ -113,10 +113,10 @@
                         <td>' + (feature.properties['Lat'] !== null ? autolinker.link(feature.properties['Lat'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['RelPath'] !== null ? '<img src= "/ + String(feature.properties['RelPath']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['RelPath'] !== null ? '<img src="TestImages/' + String(feature.properties['RelPath']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Images'] !== null ? '<img src= String(feature.properties['Images']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Images'] !== null ? '<img src="TestImages/' + String(feature.properties['Images']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
