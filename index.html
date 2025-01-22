@@ -116,9 +116,6 @@
                     <tr>\
                         <td colspan="2">' + (feature.properties['RelPath'] !== null ? '<img src="' + feature.properties['RelPath'].replace(/\\/g, '/') + '">' : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Images'] !== null ? '<img src="' + feature.properties['RelPath'].replace(/\\/g, '/') + '">' : '') + '</td>\
-                    </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
